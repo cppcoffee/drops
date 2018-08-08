@@ -10,6 +10,7 @@ when SYN package count greater than RX_SYN_LIMIT, accept 10  drops 30 package.
 ### Compiling requires having installed:
 
 clang >= version 3.4.0
+
 llvm >= version 3.7.1
 
 Note that LLVM's tool 'llc' must support target 'bpf', list version and supported targets with command: llc --version
