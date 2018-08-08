@@ -1,6 +1,9 @@
 ## About
 
-The drops are base Linux XDP use to proactive defense TCP-SYN flood. when SYN package count greater than RX_SYN_LIMIT, accept 10  drops 30 package.
+The drops are base Linux XDP use to proactive defense TCP-SYN flood.
+
+when SYN package count greater than RX_SYN_LIMIT, accept 10  drops 30 package.
+
 
 ## Build dependencies
 
