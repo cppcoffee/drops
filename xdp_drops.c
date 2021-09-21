@@ -178,14 +178,14 @@ static int ipv6_playload_offset(struct ipv6hdr *ip6h, void *data_end)
 	int off = sizeof(struct ipv6hdr);
     void *start = ip6h;
 
-	if (start + off > data_end) {
-		return -1;
-	}
+    if (start + off > data_end) {
+        return -1;
+    }
 
     for (i = 0; i < 10; i++) {
-		if (!ipv6_ext_hdr(nexthdr)) {
-			break;
-		}
+        if (!ipv6_ext_hdr(nexthdr)) {
+            break;
+        }
 
         if (nexthdr == NEXTHDR_NONE) {
             return -1;
